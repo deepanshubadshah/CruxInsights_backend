@@ -1,6 +1,7 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
+from django.http import JsonResponse
 import logging
 
 from .services import CruxService
@@ -134,3 +135,6 @@ class MultiUrlCruxDataView(APIView):
             response_data["errors"] = error_urls
         
         return Response(response_data)
+
+def health_check(request):
+    return JsonResponse({'status': 'ok'})
