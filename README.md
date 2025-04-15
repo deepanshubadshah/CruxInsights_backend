@@ -27,8 +27,8 @@ This is the **Django backend** for the CruxInsight project. It fetches and analy
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/cruxinsight-backend.git
-cd cruxinsight-backend
+git clone https://github.com/deepanshubadshah/CruxInsights_backend.git
+cd cruxinsight_backend
 
 # Create and activate virtual environment
 python -m venv venv
